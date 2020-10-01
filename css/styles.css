@@ -328,7 +328,8 @@ text-decoration: none;
 }
 .kind_material__td{
   padding-bottom: 37px;
-  width: 155px;  
+  width: 155px;
+  padding-left: 60px;  
 }
 
 .kind_material__table{
