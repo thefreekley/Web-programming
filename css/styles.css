@@ -1,0 +1,364 @@
+/* merriweather-900 - latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/merriweather-v22-latin-900.eot'); /* IE9 Compat Modes */
+  src: local('Merriweather Black'), local('Merriweather-Black'),
+       url('../fonts/merriweather-v22-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/merriweather-v22-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/merriweather-v22-latin-900.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/merriweather-v22-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/merriweather-v22-latin-900.svg#Merriweather') format('svg'); /* Legacy iOS */
+}
+/* rubik-regular - latin */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/rubik-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/rubik-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/rubik-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/rubik-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/rubik-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/rubik-v11-latin-regular.svg#Rubik') format('svg'); /* Legacy iOS */
+}
+/* rubik-500 - latin */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/rubik-v11-latin-500.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/rubik-v11-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/rubik-v11-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/rubik-v11-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/rubik-v11-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/rubik-v11-latin-500.svg#Rubik') format('svg'); /* Legacy iOS */
+}
+html{
+  box-sizing: border-box; /* doing padiing inside block */
+}
+*,*::before, *:: after{ /*pseudo elementy */
+  box-sizing: inherit; - /* imitate father element html*/
+}
+
+.wrapper{
+  max-width: 808px;
+  margin: 0 auto;
+}
+/**********header************/
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header__wrapper{
+  display: flex;
+  flex-wrap: wrap; /* without transfer*/
+  align-items: center; /* bottom alignment */
+  justify-content:  space-between; 
+  padding-top: 37px;
+}
+
+.header__list{
+  display:  flex;
+  flex-wrap: wrap;
+}
+
+.header__item{
+  margin-right: 40px;
+}
+.header__item:last-child{
+
+  margin-right: 0;
+  background: #FFFFFF;
+  border-radius: 4px;
+  width: 90px;
+  height: 34px;
+  text-align: center;
+}
+
+#header__link_border{
+  color: #606B74;
+}
+.header__link{
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 34px;
+  vertical-align: bottom;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.header__link:hover{
+  opacity: 0.75;
+  transition: all 500ms ease; 
+}
+.header__item:hover{
+  transform: scale(1.2); 
+  transition: all 500ms ease;
+}
+/******header end********/
+/********intro**********/
+
+.intro{
+  height: 500px;
+  background-color: dark;
+  background: url(../images/IMG.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 186px;
+}
+.intro__wrapper{
+  height: 219px;
+  display: flex;
+  flex-wrap: wrap; /* without transfer*/
+  align-items: center; /* bottom alignment */
+  justify-content:  space-between; 
+}
+.intro__titles{
+  max-width: 440px;
+
+}
+.intro__title{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  margin-bottom: 12px;
+
+}
+.intro__subtitle{
+  max-width: 440px;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+.intro__button{
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.intro__button_img{
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+}
+.intro__button_title{
+  font-family: Rubik;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+color: #FFFFFF;
+padding-left:10px; 
+text-decoration: none;
+}
+.intro__button_title:hover{
+  opacity: 0.75;
+  transform: scale(1.1);
+  transition: all 500ms ease; 
+}
+
+
+.intro__info_naw{
+  margin-right: 50px;
+  display: flex;
+  flex-wrap: wrap; /* without transfer*/
+  align-items: flex-end; /* bottom alignment */
+  
+}
+
+.intro__info_list{
+  height: 219px;
+  width: 12px;
+  display:  flex;
+  flex-wrap: wrap;
+
+}
+.intro___info_items{
+ transform: rotate(90deg);
+}
+
+.intro___info_items:last-child{
+  margin-right: 0;
+}
+
+.intro__info_link{
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #FFFFFF;
+  text-decoration: none; 
+}
+.intro__info_link:hover{
+  opacity: 0.75;
+  transition: all 500ms ease;
+}
+.intro___info_items:hover{
+  transform: scale(1.5);  
+  transition: all 500ms ease;
+  margin-top: 20px;
+}
+/********intro end**********/
+.materials__titles{
+  max-width: 400px;
+  max-height: 275px;
+  padding-top: 56px;
+}
+.materials__title{
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 38px;
+  color: #222F33;
+  padding-bottom: 10px;
+}
+.materials__subtitle{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: #646D70;
+  padding-bottom: 41px;
+}
+.materials__button{
+  width: 90px;
+  height: 34px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid #646D70;
+  border-radius: 4px;
+  color: #606B74;
+}
+.materials__button:hover{
+  color:#FFFFFF;
+  background: #606B74;
+  transition: all 500ms ease;
+}
+.wrapper__materials{
+  height: 399px;
+  display: flex;
+  flex-wrap: wrap; /* without transfer*/
+  align-items: center; /* bottom alignment */
+  justify-content:  space-between; 
+}
+.innovative{
+  background: #222F33;
+  height: 313px;
+}
+.innovative__titles{
+  display: flex;
+  flex-wrap: wrap; /* without transfer*/
+  align-items: center; /* bottom alignment */
+  justify-content:  space-between; 
+}
+.innovative__title{
+  padding-top: 66px;
+  padding-bottom:11px;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+
+.innovative__subtitle{
+  width: 380px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.wrapper_kind_material{
+  height: 532px;
+  display: flex;
+  flex-wrap: wrap; /* without transfer*/
+  align-items: center; /* bottom alignment */
+  justify-content:  space-between; 
+}
+.kind_material__title{
+  padding-bottom: 4px;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 23px;
+  color: #222F33;
+}
+.kind_material__subtitle{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  color: #646D70;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+.kind_material__td{
+  padding-bottom: 37px;
+  width: 155px; 
+  padding-left: 60px;
+}
+
+.kind_material__img{
+  padding-top: 85px;
+}
+.kind_material__table{
+  margin-top: 89px;
+}
+.end{
+  display: flex;
+  justify-content: center;
+  background: #222F33;
+  height: 92px;
+  align-items: center;
+}
+.end__emeil{
+  padding-right: 257px;
+}
+.end_cookies{
+  padding-left: 227px;
+  padding-right: 30px;
+}
+.end p{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
