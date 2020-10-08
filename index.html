@@ -2,17 +2,40 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" >
 	<link rel="stylesheet" type="text/css" href="./css/reset.css">
 	<link rel="stylesheet" type="text/css" href="./css/styles.css">
 	<title>Lab1 V1</title>
 </head>
 <body>
+
+	<div class="wrapper">
+	<section class="wrapper__check">
+        <input type="checkbox" id="check-menu">
+        	<label for="check-menu">
+					<img src="./images/svg/Logo horizontal.svg" alt="EcoCabins" class="header__logo_img">
+				</label>
+		
+        <div class="burger-line first"></div>
+        <div class="burger-line second"></div>
+        <div class="burger-line third"></div>
+        <div class="burger-line fourth"></div>
+     
+        <nav class="main-menu">
+            <a class ="check__link" href="#">Modellen</a>
+            <a class ="check__link" href="#">Kopen</a>
+            <a class ="check__link" href="#">Huren</a>
+            <a class ="check__link" href="#">Nieuws</a>
+            <a class ="check__link" href="#">Contact</a>
+        </nav>
+    </section>
+    </div>
+   
 	<header class="header">
 		<div class="wrapper">
 			<div class="header__wrapper">
 			<div class="header__logo">
-				<a href="!#" class="header__logo_link">
+				<a href="#" class="header__logo_link">
 					<img src="./images/svg/Logo horizontal.svg" alt="EcoCabins" class="header__logo_img">
 				</a>
 			</div>
@@ -38,7 +61,7 @@
 		</div>
 	</div>
 	</header>
-	<main class="main">
+	 <main class="main">
 		<section class="intro">
 			<div class="wrapper">
 				<div class="intro__wrapper">
@@ -48,12 +71,13 @@
 					</div>
 
 					<div class="intro__button">
+						<a href="!#" class="intro__button_title">Watch the movie</a>
 							<div class="intro__button_img">
 								
 							<img src="./images/svg/Shape.svg" alt="Watch the movie" style="padding:12px">
 							
 							</div>
-						<a href="!#" class="intro__button_title">Watch the movie</a>
+						
 					</div>
 				
 					<nav class="intro__info_naw">
@@ -140,14 +164,19 @@
 				</div>
 			</div>
 		</section>
-		<section class="end">
-				<p class="end__emeil">info@eco-cabins.com</p>
+		<footer class="footer">
+				<div class="wrapper">
+					<div class="wrapper__footer">
+				<p class="footer__emeil">info@eco-cabins.com</p>
 				<a href="!#" class="header__logo_link">
 					<img src="./images/svg/Logo horizontal.svg" alt="EcoCabins" class="header__logo_img">
 				</a>
-				<p class="end_cookies">Cookies</p>
-				<p class="end_pryvacy">Privacybeleid</p>
-		</section>
+				<div class="footer__cookies-pryvacy">
+				<p>Cookies</p>
+				<p>Privacybeleid</p>
+				</div>
+		</div>
+		</footer>
 	</main>
 </body>
 </html>
