@@ -1,0 +1,31 @@
+.innovative{
+  background: #222F33;
+  height: 313px;
+}
+.innovative__titles{
+  display: flex;
+  flex-wrap: wrap; /* without transfer*/
+  align-items: center; /* bottom alignment */
+  justify-content:  space-between; 
+}
+.innovative__title{
+  padding-top: 66px;
+  padding-bottom:11px;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+
+.innovative__subtitle{
+  width: 380px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}

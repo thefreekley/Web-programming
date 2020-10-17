@@ -1,0 +1,27 @@
+
+.footer{
+  
+  width: 100%;  
+  display: flex;
+  justify-content: space-between;
+  background: #222F33;
+  height: 92px;
+  align-items: center;
+}
+
+.footer__cookies-pryvacy{
+  display: flex;
+  flex-direction: row;
+  width: 155px;
+  justify-content: space-between;
+}
+.footer p{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}

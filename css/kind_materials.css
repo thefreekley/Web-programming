@@ -1,0 +1,49 @@
+
+.kind_material__title{
+  padding-bottom: 4px;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 23px;
+  color: #222F33;
+}
+.kind_material__subtitle{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  color: #646D70;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+.kind_material__td{
+  padding-bottom: 37px;
+  width: 155px;
+  padding-left: 60px;  
+}
+.kind_material__td:hover{
+
+transform: scale(1.1) translateX(20px);
+ transition: all 500ms ease;
+}
+.kind_material__title:hover{
+  background-color: #222F33;
+  color: white;
+  border-radius: 2px;
+
+  transition: all 500ms ease;
+
+}
+.kind_material__title:hover + .kind_material__subtitle{
+   border: 1px solid #222F33;
+   border-top: 0px;
+   border-radius: 2px;
+   transition: all 500ms ease;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.kind_material__table{
+   margin-bottom: -37px;
+}
