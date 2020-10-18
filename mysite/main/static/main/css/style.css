@@ -1,0 +1,272 @@
+body{
+	font-family: "Arial"; 
+
+}
+a{
+text-decoration: none;
+color: rgb(0,0,0);
+}
+
+.header{
+	margin-right: 4px;
+	margin-left: 4px;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #F8F8F8;
+	border: solid #BDBDBD 1px;
+	border-radius: 5px
+}
+
+.header__My-Zoo{
+	
+	font-size: 18px;
+	color: #7F7F7F;
+	padding: 0px 20px 0px 15px;
+}
+
+.header__a{
+	height: 50px;
+	padding:16px 15px 16px 15px;
+	background: #F8F8F8;
+	transition: 0.5s;
+
+}
+.header__a:hover{
+	transition: 0.5s;
+	background-color: #E0E0E0;
+}
+
+.nav__type{
+	width: 220px;
+	height: 25px;
+	color: black;
+	border: solid #BDBDBD 1px;
+	border-radius: 2px
+}
+.nav_search{
+	padding:0px 15px 0px 15px;
+	height: 30px;
+	border: none; 
+	outline: none;
+	background: #F8F8F8;
+	border-radius: 3px;
+	border: solid #3E95DF 1px;
+	color: #3E95DF;
+	margin:0px 5px 0px 5px;
+	transition: 0.5s;
+}
+.nav_search:hover{
+	color: #F8F8F8;
+	background:#3E95DF; 
+	transition: 0.5s;
+}
+
+.nav_clear{
+	padding:0px 15px 0px 15px;
+	height: 30px;
+	border: none; 
+	outline: none;
+	background: #F8F8F8;
+	border-radius: 3px;
+	border: solid #D9534F 1px;
+	color: #D9534F;
+	margin:0px 5px 0px 5px;
+	transition: 0.5s;
+}
+.nav_clear:hover{
+	color: #F8F8F8;
+	background:#D9534F;
+	transition: 0.5s; 
+}
+.manager{
+	margin-top: 20px;
+	width: 250px;
+	height: 100ex;
+	border-right: solid #CDCDCD 2px;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+}
+.manager__wraper{
+	width: 220px;
+	display: flex;
+	flex-direction: column;
+	align-items:space-beetwen;
+
+}
+
+.manager_manage-animals{
+	text-align: center;
+	font-size: 22px;
+}
+.manager__sort{
+	font-size: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: solid #CDCDCD 2px;
+}
+.manager__sort_span{
+	font-weight: bold;
+	color: #616161;
+}
+.manager__daily-expenses{
+	font-size: 15px;
+	padding-top: 20px;
+	font-weight: bold;
+	color: #616161;
+}
+
+.manager__count{
+
+	margin-top: 15px;
+	width: 100px;
+	font-weight: bold;
+	height: 30px;
+	border: none; 
+	outline: none;
+	background: #0275D8;
+	border-radius: 3px;
+	color: white;
+	transition: 0.5s;
+}
+.manager__count:hover{
+	transform: scale(1.05);
+	transition: 0.5s;
+}
+.manger__result{
+	padding-top:20px; 
+	display: flex;
+	justify-content: space-between;
+}
+.manager__count-div{
+	display: flex;
+	justify-content: center;
+}
+#manger__result_expenses_sum{
+	font-weight: bold;
+}
+.manger__result_expenses{
+	font-size: 15px;
+	color: #616161;
+}
+#checkbox1{
+    display: none;
+}
+#checkbox1 + label{
+    display: block;
+    width: 40px;
+    height: 15px;
+    border: solid #0275D8 1.5px;  
+    border-radius: 10px;  
+}
+
+#checkbox1:checked ~ label div{
+    margin-left: 24px;
+ 		transition: 0.2s;  
+}
+label div{
+	transition: 0.2s;  
+	height: 14px;
+	width: 14px;
+	border-radius: 7px;
+	background: #0275D8;
+}
+.main{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.block__box{
+	margin:30px;
+	margin-right: 0px;
+	width: 180px;
+	height: 280px;
+	 border: solid #616161 1.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+   justify-content: space-between;
+}
+
+
+.block__box_title{
+	padding-top: 15px;
+	padding-left: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.block__box_text{
+    padding-top: 10px;
+	padding-left: 10px;
+	font-size: 13px;
+	color:#61617A;
+}
+.block__box_subtitle{
+	padding-top: 14px;
+	padding-left: 10px;
+	font-size: 13px;
+}
+
+.block__box_last-updated{
+	padding-top: 15px;
+	padding-left: 10px;
+	font-size: 13px;
+	color: #B0B0B0;
+}
+.block__buttons{
+
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 5px;
+}
+.block__edit{
+    text-align:center;
+    line-height:30px;
+	margin-left: 10px;
+	margin-top: 15px;
+	width: 75px;
+	font-size: 14px;
+	height: 30px;
+	border: none;
+	outline: none;
+	background: #5BC0DE;
+	border-radius: 4px;
+	color: white;
+	transition: 0.5s;
+}
+.block__edit:hover{
+	transform: scale(1.05);
+	transition: 0.5s;
+}
+
+.block__remove{
+    text-align:center;
+    line-height:30px;
+	margin-right: 10px;
+	margin-top: 15px;
+	width: 75px;
+	font-size: 14px;
+	height: 30px;
+	background: #D9534F;
+	border-radius: 4px;
+	color: white;
+	transition: 0.5s;
+}
+.block__remove:hover{
+	transform: scale(1.05);
+	transition: 0.5s;
+}
+
+
+.block{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}

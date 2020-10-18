@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'main/css/normalize.css' %}">
+	<link rel="stylesheet" href="{% static 'main/css/reset.css' %}">
+	<link rel="stylesheet" href="{% static 'main/css/layout_styles.css' %}">
+	<title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+	<header class="header">
+		<div class="header__page">
+			<a class="header__My-Zoo" href="#">World of Printer</a>
+			<a class="header__a" href="{% url 'view' %}" > My Printers </a>
+			<a class="header__a" href="{% url 'create' %}" > Create Printer </a>
+		</div>
+	</header>
+	<main class="main">
+		<form class="form" method="post">
+			{% csrf_token %}
+
+			<p class="form__p">{% block content %} {% endblock %}</p>
+			<div class="form__area">
+				<p class="form__area_text">Title</p>
+				{{ form.title }}
+
+				<p class="form__area_text">Description:</p>
+				{{ form.description }}
+
+				<p class="form__area_text">Price (₴)</p>
+				{{ form.price }}
+
+				<p class="form__area_text">Speed of movement</p>
+				{{ form.speed }}
+
+				<p class="form__area_text">Date publication</p>
+				{{ form.date }}
+				<input type="submit" class="form__submit" value="Submit">
+			</div>
+		</form>
+		{% if error %}
+		<div class="error">
+			<p class="error__p"><span style="font-weight: bold;">Oh snap</span> 
+			Change a few things up and try submitting again.</p>
+			<input type="button" class="error__close" value="x">
+		</div>
+		{% endif %}
+	</main>
+</body>
+</html>

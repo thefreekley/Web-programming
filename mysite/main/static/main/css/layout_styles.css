@@ -1,0 +1,133 @@
+body{
+	font-family: "Arial"; 
+
+}
+a{
+text-decoration: none;
+color: rgb(0,0,0);
+}
+
+.header{
+	margin-right: 4px;
+	margin-left: 4px;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #F8F8F8;
+	border: solid #BDBDBD 1px;
+	border-radius: 5px
+}
+
+.header__My-Zoo{
+	
+	font-size: 18px;
+	color: #7F7F7F;
+	padding: 0px 20px 0px 15px;
+}
+
+.header__a{
+	height: 50px;
+	padding:16px 15px 16px 15px;
+	background: #F8F8F8;
+	transition: 0.5s;
+
+}
+.header__a:hover{
+	transition: 0.5s;
+	background-color: #E0E0E0;
+}
+
+
+.main{
+	padding-top: 30px;
+	height: 700px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+.form__p{
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+	padding-bottom: 40px;
+}
+.form__area_text{
+	font-size: 11px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #828282;
+}
+.form__area{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 200px;
+
+}
+.form input{
+	font-size: 13px;
+	border-radius: 5px;
+	border:solid #C9C9C9 1px;
+}
+
+
+.form__area_title-input{
+	height: 25px;
+}
+.form__area_input-description{
+	height: 90px;
+	font-size: 12px;
+	border-radius: 5px;
+	border:solid #C9C9C9 1px;
+
+}
+.form__select{
+	color: #828282;
+	font-size: 11px;
+	height: 25px;
+	margin-bottom: 30px;
+}
+
+.form__submit{
+    margin-top:30px;
+	height: 30px;
+	background: #0275D8;
+	color: white;
+	font-weight: bold;
+	font-size: 13px;
+	transition: 0.3s;
+}
+.form__submit:hover{
+    transform:scale(1.05);
+    transition: 0.3s;
+}
+.error{
+	padding: 14px;
+	color: #A94442;
+	background: #F2DEDE;
+	font-size: 12px;
+	width: 400px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+		border-radius: 4px;
+		border: solid #ECCFD3 1px;
+}
+
+.error__close{
+	border: none; 
+	outline: none;
+	background: #F2DEDE;
+
+	color: #A94442;
+	transform: scaleX(1.4);
+
+
+}
+.form__control{
+    color:grey;
+	height: 20px;
+}
