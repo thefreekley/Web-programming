@@ -183,6 +183,7 @@ label div{
 
 .block__box{
 	margin:30px;
+	margin-bottom:0px;
 	margin-right: 0px;
 	width: 180px;
 	height: 280px;

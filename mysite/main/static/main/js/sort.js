@@ -11,35 +11,25 @@ function count(){
  function sort(){
      var checkBox = document.getElementById("checkbox1");
 
-//divs[j - 1].children[0].children[2].children[0].textContent
-     if(checkBox.checked == true){
+     if(checkBox.checked == true)sortBulb(true);
+     else sortBulb(false);
 
-   const items = document.getElementById("block_");
-    for (let i = 0; i < items.children.length - 1; i++) {
-        for (let j = i; j < items.children.length; j++) {
-            if (Number(items.children[i].children[0].children[2].children[0].textContent) > Number(items.children[j].children[0].children[2].children[0].textContent)) {
+        function sortBulb(order){
+            const items = document.getElementById("block_");
+                for (let i = 0; i < items.children.length - 1; i++) {
+                   for (let j = i; j < items.children.length; j++) {
+                    if ( (childCont(i) < childCont(j) && !order) || (childCont(i) > childCont(j) && order) ) {
 
-                let replacedNode = items.replaceChild(items.children[j], items.children[i]);
-                insertAfter(replacedNode, items.children[i]);
+                        let replacedNode = items.replaceChild(items.children[j], items.children[i]);
+                        insertAfter(replacedNode, items.children[i]);
+                    }
+                }
             }
         }
-    }
-     }
-     else{
 
-     const items = document.getElementById("block_");
-    for (let i = 0; i < items.children.length - 1; i++) {
-        for (let j = i; j < items.children.length; j++) {
-            if (Number(items.children[i].children[0].children[2].children[0].textContent) < Number(items.children[j].children[0].children[2].children[0].textContent)) {
-
-                let replacedNode = items.replaceChild(items.children[j], items.children[i]);
-                insertAfter(replacedNode, items.children[i]);
-            }
-        }
-    }
-
-     }
-
+function  childCont(i){
+    return Number(document.getElementsByClassName("block__box_price")[i].textContent)
+}
 function insertAfter(elem, refElem) {
     return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
 }
