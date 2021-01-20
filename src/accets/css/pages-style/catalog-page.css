@@ -1,0 +1,42 @@
+
+.catalog-boxes-wrapper{
+
+}
+
+
+
+.catalog-boxes-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+
+.catalog-filters{
+    background-color: black;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.catalog_input{
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-size: 23px;
+}
+.price-catalog{
+    color: grey;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.catalog-page-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

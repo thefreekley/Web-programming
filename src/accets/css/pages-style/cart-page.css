@@ -1,0 +1,25 @@
+
+.cart-boxes-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.cart-news{
+    font-size: 35px;
+    padding-left: 70px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.cart-buttons{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 190px;
+}
+
+.cart-buttons-wrapper{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

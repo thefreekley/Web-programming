@@ -1,0 +1,35 @@
+.social-network img{
+    height: 30px;
+    width: 30px;
+    padding-right: 10px;
+}
+.social-network{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.hat__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.hat{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.home-news{
+    font-size: 35px;
+    padding-left: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.home-page-button{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

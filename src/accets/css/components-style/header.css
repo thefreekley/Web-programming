@@ -1,0 +1,164 @@
+.header{
+    width: 100%;
+    height: 50px;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header__title{
+
+    text-decoration: none;
+
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.category{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    filter: invert(1);
+    padding-left: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.header__nav{
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.category{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category a{
+
+    color: white;
+    transition: 0.5s;
+}
+.category li{
+    transition: 0.5s;
+    padding:2px 15px 2px 15px;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+}
+
+.transition:hover{
+
+
+    background-color: white;
+    color: black;
+    padding-left: 40px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    transition: 0.5s;
+}
+.logo{
+    transform-origin:center;
+    transition: 0.5s;
+}
+.header__title:hover  .logo{
+    margin-left: 20px;
+    padding-right: 20px;
+    filter: invert(0);
+
+
+}
+
+.hat__button{
+    margin-left: 170px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.hat__button_img{
+    order: -1;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+    z-index: 4;
+    transition: all 500ms ease;
+}
+.hat__button_title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    padding-left:10px;
+    text-decoration: none;
+    z-index: 3;
+    transition: all 500ms ease;
+}
+.hat__button_title:hover{
+    opacity: 0.75;
+    transform: scale(1.1);
+    transition: all 500ms ease;
+    background: white;
+    color: black;
+    border-radius: 6px;
+    padding: 2px;
+    padding-left: 10px;
+}
+.hat__button_title:hover + .hat__button_img{
+    margin-left: 20px;
+    transform: scale(1.1) rotate(720deg);
+    transition: all 1000ms ease;
+    background: red;
+
+}
+.hat__button_title:hover + .hat__button_img img{
+    filter: invert(100%);
+    transition: all 1000ms ease;
+    transform: scale(1.2);
+}
+.active{
+    background-color: white;
+    color: black;
+    padding: 2px 7px 2px 7px;
+    transition: 0.5s;
+}
+.cart-header_img{
+    width: 30px;
+    height: 25px;
+    filter: invert(1);
+}
+
+.header-price-count{
+
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-size: 12px;
+    background-color: red;
+    height: 30px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}

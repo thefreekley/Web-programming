@@ -1,0 +1,23 @@
+html, body {
+    height: 100%;
+}
+body{
+    font-family: "Oswald-Bold";
+    overflow-x:hidden;
+}
+a{
+    text-decoration: none;
+}
+.hat{
+    height: 262px;
+    width: 100%;
+}
+.wrapper{
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+.content {
+    min-height: calc(100vh - 80px);
+}
